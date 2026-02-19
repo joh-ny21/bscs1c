@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Target elements with class "warning" */
+        .warning {
+            color: red;
+            font-weight: bold;
+            border: 1px solid orange;
+            padding: 10px;
+        }
+        
+        /* Target elements with class "success" */
+        .success {
+            color: green;
+            font-weight: bold;
+            border: 1px solid lightgreen;
+            padding: 10px;
+        }
+        
+        /* Target elements with class "urgent" (additional styling) */
+        .urgent {
+            background-color: #ffeeee;
+            text-transform: uppercase;
+        }
+        
+        /* Target elements with BOTH "warning" and "urgent" */
+        .warning.urgent {
+            border-width: 3px;
+            animation: pulse 1s infinite;
+        
+        }
+        .sample{
+            padding-left: 200%;
+        
+        }
+    </style>
+</head>
+<body>
+    <div class="warning">This is a warning message</div>
+    <div class="success">Operation completed successfully</div>
+    <div class="warning urgent">URGENT: System will reboot in 5 minutes</div>
+    <div class="success urgent">SUCCESS with urgency (rare, but possible)</div>
+    <div id="sample">
+    <img src="Screenshot 2025-12-15 094816.png" alt=" image">
+    </div>
+</body>
+</html>
